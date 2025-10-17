@@ -1,21 +1,16 @@
 
 ---
-title: Gradio Browser Component
+title: Gradio AI Context
 sdk: gradio
 sdk_version: 5.49.0
 app_file: app.py
 pinned: false
 ---
 
-
 # `gradio_aicontext`
-<a href="https://huggingface.co/spaces/zuppif/gradio_browser" target="_blank"><img alt="Demo" src="https://pypi-camo.freetls.fastly.net/b884ac3cc4e2e97796fb26aad1ea0643663a1bc3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f25463025394625413425393725323044656d6f2d2532333039374546463f7374796c653d666c6174266c6f676f436f6c6f723d626c61636b"></a>  
+<img alt="Static Badge" src="https://img.shields.io/badge/version%20-%200.0.1%20-%20orange">  
 
 Custom gradio component to visualize your ai context by colours and tokens' size.
-
-[demo](https://huggingface.co/spaces/zuppif/gradio_browser) here!
-![alt](media/demo.png)
-
 
 ## Installation
 
@@ -24,8 +19,6 @@ pip install gradio_aicontext
 ```
 
 ## Usage
-
-Simple example, using tiktoken to encode tokens. If a `count_tokens` is not provided, we'll use the heuristic 4 chars = 1 token
 
 ```python
 import gradio as gr
