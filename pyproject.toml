@@ -9,15 +9,12 @@ build-backend = "hatchling.build"
 [project]
 name = "gradio_aicontext"
 version = "0.0.1"
-description = "Python library for easily interacting with trained machine learning models"
+description = "Custom gradio component to visualize your ai context by colours and tokens' size."
 readme = "README.md"
 license = "Apache-2.0"
 requires-python = ">=3.8"
 authors = [{ name = "YOUR NAME", email = "YOUREMAIL@domain.com" }]
-keywords = [
-  "gradio-custom-component",
-  "gradio-template-SimpleTextbox"
-]
+keywords = ["gradio-custom-component", "gradio-template-SimpleTextbox"]
 # Add dependencies here
 dependencies = ["gradio>=4.0,<6.0"]
 classifiers = [
