@@ -100,7 +100,10 @@ class AIContext(Component):
 
         tokens_count = [self._count_tokens(msg) for msg in messages]
 
-        return {"messages": messages, "tokens_count": tokens_count}
+        return {
+            "messages": [m for m in messages if m.get("type") != "reasoning"],
+            "tokens_count": tokens_count,
+        }
 
     def _count_tokens(self, message: dict) -> int:
         """Count tokens in a message using the configured function or default heuristic."""

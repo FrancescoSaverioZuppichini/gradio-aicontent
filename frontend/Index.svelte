@@ -21,6 +21,7 @@
   export let min_width: number | undefined = undefined;
   export let loading_status: LoadingStatus | undefined = undefined;
   export let interactive: boolean = false;
+  export let min_height = "500px";
 
   $: messages = value?.messages || [];
   $: tokens = value?.tokens_count || [];
@@ -80,14 +81,12 @@
 
 <style>
   .context-container {
-    display: flex;
     width: 100%;
-    height: 100%;
+    height: 100% !important;
+    display: flex;
     flex-direction: column;
-    background: var(--background-fill-secondary);
     border-radius: var(--block-radius);
     box-shadow: var(--shadow-drop);
-    height: 100%;
   }
 
   .empty-state {
@@ -109,7 +108,7 @@
     align-items: center;
     gap: 10px;
     padding: 16px 16px 12px 16px;
-    border-bottom: 2px solid var(--border-color-primary);
+    border-bottom: 1px solid var(--border-color-primary);
     flex-wrap: wrap;
     flex-shrink: 0;
   }

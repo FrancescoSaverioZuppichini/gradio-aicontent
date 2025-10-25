@@ -8,7 +8,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "gradio_aicontext"
-version = "0.0.1"
+version = "0.0.5"
 description = "Custom gradio component to visualize your ai context by colours and tokens' size."
 readme = "README.md"
 license = "Apache-2.0"
